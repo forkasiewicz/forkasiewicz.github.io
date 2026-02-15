@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+  --bg: #ece9de;
+  --bg-code: #00000008;
+  --title: #626059;
+  --accent: #712b2a;
+  --main: #3b463d;
+  --highlight: #5d90c633;
+  --font: "Libertinus Serif";
+  --font-mono: "Fira Code";
+}
+
+body {
+  font-family: var(--font);
+  font-size: 22px;
+  background-color: var(--bg);
+  color: var(--main);
+}
+
+.title a {
+  font-size: 50px;
+  text-decoration-thickness: 3px;
+  color: var(--title);
+}
+
+h1, h2, h3 {
+  color: var(--main);
+  margin-right: 10px;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 29px;
+}
+
+a {
+  color: var(--accent);
+}
+
+b {
+font-weight: 600;
+}
+
+::selection {
+  background: var(--highlight);
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+  white-space: pre-line;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+
+  background-color: var(--bg-code);
+  color: var(--main);
+}
+
+ul {
+  line-height: 1.25;
+}
+
+li::marker {
+  color: var(--main);
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  background: var(--main);
+  margin: 30px 0;
+  border-radius: 3px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.content {
+  width: 900px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 2px 7px 0px 7px;
+  }
+}
